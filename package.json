@@ -1,0 +1,18 @@
+{
+	"name": "RModular",
+	"version": "0.0.1",
+	"description": "RModular is a development group dedicated to creating high-quality, modular services, frameworks, and utilities for Roblox developers. We provide both open-source and premium solutions to enhance game functionality, improve efficiency, and simplify development. — https://github.com/RModular",
+	"main": "index.js",
+	"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    	"keywords": [],
+	    "author": "Striatp",
+	    "license": "MIT",
+	    "dependencies": {
+        "@tryforge/forge.canvas": "^1.1.1",
+        "@tryforge/forge.db": "^2.0.6",
+        "@tryforge/forgescript": "github:tryforge/ForgeScript#dev",
+        "sqlite3": "^5.1.7"
+    }
+}
