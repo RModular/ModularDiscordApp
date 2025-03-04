@@ -3,6 +3,7 @@ module.exports = {
 	name: "eval",
 	aliases: ["ev", "e"],
 	code: `
-$onlyIf[$authorID==876801702051856424]
+$onlyIf[$authorID==876801702051856424;]
+$eval[$message]
 `
 }
