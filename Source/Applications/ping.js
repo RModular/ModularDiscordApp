@@ -1,3 +1,6 @@
+const config = require("../config.js");
+const main_color = `${config.COLORS.main}`
+
 module.exports = {
 	data: {
 		name: 'ping',
