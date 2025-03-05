@@ -3,9 +3,9 @@ module.exports = {
 	name: "eval",
 	aliases: ["ev", "e"],
 	code: `
-$onlyIf[$authorID==876801702051856424;]
-$eval[$message]
-
-**WS**: $pingms | **RT**: $math[$executionTime*100] | <t:$round[$math[$getTimestamp/1000-$uptime/1000]]:R>
+**WS**: $pingms | **RT**: $round[$math[$executionTime*100]]ms | <t:$round[$math[$getTimestamp/1000-$uptime/1000]]:R>
+$addField[Evaled Code;\`\`\`$message\`\`\`]
+$addField[Result;$if[$eval[$message]==;> *No result*;\`\`\`$eval[$message]\`\`\`]]
+$color[#FEFEFE]
 `
 }
